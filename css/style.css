@@ -1,0 +1,58 @@
+* {
+  /* правильно считать ширину и высоту элементов */
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  background-color: #635854;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #3596F5;
+}
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  /* сделали блок гибким */
+  display: flex;
+  /* расставили элементы по краям */
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-menu {
+  /* отключаем внешние отступы */
+  margin: 0; 
+  /* отключаем внутренние отступы */
+  padding: 0;
+  /* отключаем точки у списка */
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+.navbar-item {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.navbar-link {
+  /* отключаем декорирование (подчеркивание и т. д.) */
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-contacts {
+  text-align: right;
+}
+.navbar-text {
+  display: block;
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.navbar-phone {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+}
